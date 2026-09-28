@@ -1,23 +1,51 @@
 aid: bet9ja
+
 name: Bet9ja
-description: 'Bet9ja is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bet9ja is a Nigerian online sports betting and gaming platform founded in 2013. It offers a wide range of betting options on sports, casino games, and virtual events, catering to a large user base across Nigeria and other African markets. The company provides mobile and web interfaces, with a focus on secure transactions and user-friendly experience.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bet9ja/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Sports Betting
+- Gaming
+- Nigeria
+- Online Platform
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bet9ja-hosts.yml
+- type: Vendors
+  url: vendors/bet9ja-vendors.yml
+- type: DomainSecurity
+  url: security/bet9ja-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bet9ja
+  url: https://bet9ja.com
+
+apis: []
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
